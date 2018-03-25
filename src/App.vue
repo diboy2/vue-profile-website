@@ -1,22 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <nav class="nav has-shadow">
+    </nav>
+    <section class="main-section section">
+      <div class="container content">
+        <img src="./assets/logo.png">
+        <h1>{{ msg }}</h1>
+        <h2>Essential Links</h2>
+      </div>
+    </section>
+    <footer class="footer">
+        <span class="icon">
+  <i class="fab     fa-linkedin-in"></i>
+</span>
+<span class="icon">
+  <i class="fas fa-home"></i>
+</span>
+<span class="icon">
+  <i class="fas fa-home"></i>
+</span>
+<span class="icon">
+  <i class="fas fa-home"></i>
+</span>
+
+    </footer>
   </div>
+
 </template>
 
 <script>
@@ -31,6 +40,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~bulma';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
